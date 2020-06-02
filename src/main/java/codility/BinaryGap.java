@@ -13,13 +13,15 @@ public class BinaryGap {
 
     public int maxBinaryGap(int N) {
 
-        if (N <= 0) return 0;
+        if (N <= 0)
+            return 0;
         String binaryStr = toBinaryString(N);
 
         int maxGap = 0, currentGap = 0;
 
         for (int i = 0; i < binaryStr.length(); i++) {
-            if (binaryStr.charAt(i) == '0') currentGap++;
+            if (binaryStr.charAt(i) == '0')
+                currentGap++;
             else if (binaryStr.charAt(i) == '1') {
                 maxGap = Math.max(maxGap, currentGap);
                 currentGap = 0;

@@ -10,6 +10,5 @@ class BinaryGapTest {
         BinaryGap binaryGap = new BinaryGap();
         assertEquals(5, binaryGap.maxBinaryGap(1041));
 
-
     }
 }
